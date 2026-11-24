@@ -11,3 +11,9 @@ Les modifications du fork et les PR restent dans le dépôt voisin `../vendor/`.
 `./link-configs.sh` installe ces liens sans écraser les fichiers existants. Si la destination existe déjà sans être le bon lien, déplacer d’abord l’original en lieu sûr. Le dernier lien n’est créé que si la configuration locale est présente. Sheprd garde ses réglages par défaut et le démon garde sa configuration à leurs emplacements habituels.
 
 Le TOML local contient des identifiants et reste hors Git. Les ressources installées du Material Icon Theme (`material/icons/`, `material/png/`, `material/material-icons.json`) restent également hors Git : les recopier depuis l’installation existante pour retrouver les icônes sur une autre machine.
+
+## Mettre à jour SheprdPK sur ce Mac
+
+Depuis `vendor/`, compiler avec `cargo build --locked --release -p sheprd-gpui --features moonframe`, puis lancer `../patch/update-app.sh`. Le script met à jour `~/Applications/SheprdPK.app`, conserve une copie de l’ancienne version et relance l’app et son service distant sans fermer les terminaux.
+
+Garder le même certificat Apple Development pour les mises à jour : une signature ad hoc lie l’autorisation Documents aux octets d’un seul build. Si plusieurs certificats sont disponibles, choisir le certificat utilisé précédemment avec `SHEPRDPK_SIGN_IDENTITY`. macOS peut demander une nouvelle décision Documents lors du premier passage à la signature stable. Le script n’accorde aucune autorisation.
