@@ -1,0 +1,4 @@
+# File icons and folder styles from the installed Material Icon Theme.
+command = ["python3", "material.py"]
+kind    = "process"
+publish = "latest"
