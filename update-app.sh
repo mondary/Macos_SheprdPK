@@ -9,6 +9,8 @@ identity=${SHEPRDPK_SIGN_IDENTITY:-Apple Development}
 app="$HOME/Applications/SheprdPK.app"
 bin="$app/Contents/MacOS/sheprd"
 backups="$HOME/Library/Application Support/SheprdPK/Backups"
+version=$(awk '/^## \[[0-9]+\.[0-9][0-9]\.[0-9]+\] - / { sub(/^## \[/, ""); sub(/\].*$/, ""); print; exit }' "$patch_dir/CHANGELOG.md")
+[[ -n "$version" ]] || { echo 'No CalVer in CHANGELOG.md.' >&2; exit 1; }
 
 [[ -x "$build" && -x "$bin" && "$identity" != - ]] || {
     echo 'Expected an installed SheprdPK.app, a rebuilt sheprd and an Apple signing identity.' >&2
@@ -20,6 +22,8 @@ trap 'rm -rf -- "$stage"' EXIT
 candidate="$stage/SheprdPK.app"
 ditto "$app" "$candidate"
 install -m 755 "$build" "$candidate/Contents/MacOS/sheprd"
+plutil -replace CFBundleShortVersionString -string "$version" "$candidate/Contents/Info.plist"
+plutil -replace CFBundleVersion -string "$version" "$candidate/Contents/Info.plist"
 codesign --force --sign "$identity" --timestamp=none "$candidate"
 codesign --verify --deep --strict "$candidate"
 
