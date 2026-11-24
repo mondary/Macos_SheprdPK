@@ -1,10 +1,5 @@
-# Machine-specific GUI settings, including provider credentials.
-/.local/
-
-# The separately installed Material Icon Theme pack and generated PNGs.
-/sheprd/material/icons/
-/sheprd/material/png/
-/sheprd/material/material-icons.json
-/sheprd-moonframe/material/icons/
-/sheprd-moonframe/material/png/
-/sheprd-moonframe/material/material-icons.json
+.DS_Store
+releases/
+target/
+*.log
+.git-backups/

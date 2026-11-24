@@ -1,5 +1,30 @@
 # Changelog
 
+Historique du projet SheprdPK : le fork Sheprd (`vendor/`) et les profils locaux (`patch/`).
+
+## TODO — Roadmap
+
+Statut : 2026.11.06
+
+### Phase 1 — Projet et application
+
+- [x] Profils locaux versionnés
+- [x] Panneau Git multi-dépôts et clavier Tab dans les terminaux
+- [x] Barre Moonframe : indicateurs natifs et panneau Details déplaçable
+- [x] Dépôt parapluie avec `vendor/` en submodule
+- [ ] Landing promotionnelle bilingue `store/`
+- [ ] Présence sur le hub `Web_HubApps`
+
+---
+
+## Releases
+
+## [2026.11.06] - 2026-11-24
+
+### Changed
+
+- Le projet s'organise en dépôt parapluie : `patch/` porte les profils et `vendor/` est le submodule du fork Sheprd.
+
 Historique des builds locaux de SheprdPK.
 
 ## [2026.11.05] - 2026-11-24
