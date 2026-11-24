@@ -1,12 +1,12 @@
 # SheprdPK — local configuration
 
-Version **2026.11.02** · [Français](README.md) · [Changelog](CHANGELOG.md)
+Version **2026.11.05** · [Français](README.md) · [Changelog](CHANGELOG.md)
 
 Fork changes and pull requests belong in the neighboring `../vendor/` repository. This repository tracks profiles and interface overrides independently of upstream.
 
 In the right sidebar, **Git → Repositories** lets you select a local repository inside a parent folder and see its branch, changes, and recent commits. When the terminal has focus, Tab and Shift+Tab go to OpenCode or whichever program is running.
 
-The bottom bar shows available provider quotas and detected system resources. The steaming cup indicates that sleep is being prevented. Click the version number to open About or check for updates. A local build can check official releases without installing them.
+The bottom bar shows available provider quotas and detected system resources. The steaming cup indicates that sleep is being prevented. Click the version number to open About or check for updates. A local build can check official releases without installing them. The **Details** button moves the pane on each click: right of the tabs, hidden, then left between the workspaces and the tabs. The choice is kept at the next launch.
 
 | Edit here | Path used by Sheprd |
 | --- | --- |

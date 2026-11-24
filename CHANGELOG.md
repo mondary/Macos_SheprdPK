@@ -2,6 +2,28 @@
 
 Historique des builds locaux de SheprdPK.
 
+## [2026.11.05] - 2026-11-24
+
+### Added
+
+- Le bouton Details déplace le panneau à chaque clic : à droite des onglets, masqué, puis à gauche entre les workspaces et les onglets. Le choix est conservé.
+
+### Fixed
+
+- Donner aux indicateurs natifs toute la hauteur de la barre, pour afficher les quotas, les ressources et la tasse.
+
+## [2026.11.04] - 2026-11-24
+
+### Fixed
+
+- Rétablir la barre du bas après le chargement des indicateurs natifs au démarrage.
+
+## [2026.11.03] - 2026-11-24
+
+### Fixed
+
+- Rechercher des mises à jour ouvre le panneau dédié et vérifie les versions officielles en lecture seule dans la build locale.
+
 ## [2026.11.02] - 2026-11-24
 
 ### Added

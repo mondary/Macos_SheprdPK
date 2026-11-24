@@ -1,12 +1,12 @@
 # SheprdPK — configurations locales
 
-Version **2026.11.02** · [English](README_en.md) · [Changelog](CHANGELOG.md)
+Version **2026.11.05** · [English](README_en.md) · [Changelog](CHANGELOG.md)
 
 Les modifications du fork et les PR restent dans le dépôt voisin `../vendor/`. Ce dépôt versionne les profils et les surcharges d’interface, indépendamment de l’amont.
 
 Dans le panneau droit, **Git → Repositories** permet de choisir un dépôt local dans un dossier parent et de voir sa branche, ses modifications et ses derniers commits. Quand le terminal a le focus, Tab et Maj+Tab sont transmis à OpenCode ou au programme actif.
 
-En bas de la fenêtre, la barre affiche les quotas disponibles des fournisseurs et les ressources détectées de la machine. La tasse fumante indique que la veille est suspendue. Clique sur le numéro de version pour afficher À propos ou rechercher des mises à jour. La build locale peut consulter les versions officielles sans les installer.
+En bas de la fenêtre, la barre affiche les quotas disponibles des fournisseurs et les ressources détectées de la machine. La tasse fumante indique que la veille est suspendue. Clique sur le numéro de version pour afficher À propos ou rechercher des mises à jour. La build locale peut consulter les versions officielles sans les installer. Le bouton **Details** déplace le panneau à chaque clic : à droite des onglets, masqué, puis à gauche entre les workspaces et les onglets. Le choix est conservé au prochain lancement.
 
 | Modifier ici | Chemin lu par Sheprd |
 | --- | --- |
