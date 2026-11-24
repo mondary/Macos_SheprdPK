@@ -19,6 +19,12 @@ Statut : 2026.11.06
 
 ## Releases
 
+## [2026.11.07] - 2026-11-24
+
+### Fixed
+
+- `update-app.sh` lit le changelog à la racine du projet après le regroupement en dépôt parapluie.
+
 ## [2026.11.06] - 2026-11-24
 
 ### Changed

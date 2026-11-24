@@ -9,7 +9,7 @@ identity=${SHEPRDPK_SIGN_IDENTITY:-Apple Development}
 app="$HOME/Applications/SheprdPK.app"
 bin="$app/Contents/MacOS/sheprd"
 backups="$HOME/Library/Application Support/SheprdPK/Backups"
-version=$(awk '/^## \[[0-9]+\.[0-9][0-9]\.[0-9]+\] - / { sub(/^## \[/, ""); sub(/\].*$/, ""); print; exit }' "$patch_dir/CHANGELOG.md")
+version=$(awk '/^## \[[0-9]+\.[0-9][0-9]\.[0-9]+\] - / { sub(/^## \[/, ""); sub(/\].*$/, ""); print; exit }' "$patch_dir/../CHANGELOG.md")
 [[ -n "$version" ]] || { echo 'No CalVer in CHANGELOG.md.' >&2; exit 1; }
 
 [[ -x "$build" && -x "$bin" && "$identity" != - ]] || {
