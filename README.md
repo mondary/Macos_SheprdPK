@@ -1,6 +1,6 @@
 # SheprdPK
 
-Version **2026.11.07** · [English](README_en.md) · [Changelog](CHANGELOG.md)
+Version **2026.11.08** · [English](README_en.md) · [Changelog](CHANGELOG.md)
 
 SheprdPK : le client [Sheprd](https://github.com/sheprd-labs/sheprd) et les profils locaux qui l'accompagnent. Le dépôt réunit les deux : le code du fork en submodule, les fichiers de configuration et les scripts à côté.
 

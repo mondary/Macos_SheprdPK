@@ -19,6 +19,12 @@ Statut : 2026.11.06
 
 ## Releases
 
+## [2026.11.08] - 2026-11-24
+
+### Fixed
+
+- Fermer un projet depuis son menu le retire de la liste ; une ligne conservée propose aussi « Supprimer de la liste ».
+
 ## [2026.11.07] - 2026-11-24
 
 ### Fixed
